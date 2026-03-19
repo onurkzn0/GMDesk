@@ -2410,7 +2410,7 @@ pub fn is_disable_ab() -> SyncReturn<bool> {
 }
 
 pub fn is_disable_account() -> SyncReturn<bool> {
-    SyncReturn(config::is_disable_account())
+    SyncReturn(true)
 }
 
 pub fn is_disable_group_panel() -> SyncReturn<bool> {
@@ -2689,6 +2689,9 @@ pub fn main_get_hard_option(key: String) -> SyncReturn<String> {
 }
 
 pub fn main_get_buildin_option(key: String) -> SyncReturn<String> {
+    if key == "hide-network-settings" || key == "hide-server-settings" || key == "hide-proxy-settings" || key == "hide-websocket-settings" {
+        return SyncReturn("Y".to_owned());
+    }
     SyncReturn(get_builtin_option(&key))
 }
 

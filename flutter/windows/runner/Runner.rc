@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "Purslane Ltd" "\0"
-            VALUE "FileDescription", "RustDesk Remote Desktop" "\0"
+            VALUE "CompanyName", "gmofis.com" "\0"
+            VALUE "FileDescription", "GMDesk Uzak Masaüstü" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "rustdesk" "\0"
-            VALUE "LegalCopyright", "Copyright © 2025 Purslane Ltd. All rights reserved." "\0"
-            VALUE "OriginalFilename", "rustdesk.exe" "\0"
-            VALUE "ProductName", "RustDesk" "\0"
+            VALUE "InternalName", "gmdesk" "\0"
+            VALUE "LegalCopyright", "Copyright © 2026 GM Ofis Pro. Tüm hakları saklıdır." "\0"
+            VALUE "OriginalFilename", "gmdesk.exe" "\0"
+            VALUE "ProductName", "GMDesk" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
