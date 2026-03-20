@@ -1104,9 +1104,6 @@ impl Config {
         if k == "key" {
             return "ex+l083ZwlMYq914vOPTCAYj1Cgop8yGXES+6Y6aZ5g=".to_string();
         }
-        if k == "api-server" {
-             return "http://185.7.243.186:21114".to_string();
-        }
         get_or(
             &OVERWRITE_SETTINGS,
             &CONFIG2.read().unwrap().options,
