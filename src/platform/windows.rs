@@ -1194,14 +1194,6 @@ fn get_subkey(name: &str, wow: bool) -> String {
 }
 
 fn get_valid_subkey() -> String {
-    let subkey = get_subkey(IS1, false);
-    if !get_reg_of(&subkey, "InstallLocation").is_empty() {
-        return subkey;
-    }
-    let subkey = get_subkey(IS1, true);
-    if !get_reg_of(&subkey, "InstallLocation").is_empty() {
-        return subkey;
-    }
     let app_name = crate::get_app_name();
     let subkey = get_subkey(&app_name, true);
     if !get_reg_of(&subkey, "InstallLocation").is_empty() {
@@ -3571,7 +3563,7 @@ pub fn message_box(text: &str) {
         .encode_utf16()
         .chain(std::iter::once(0))
         .collect::<Vec<u16>>();
-    let caption = "RustDesk Output"
+    let caption = "GMDesk Output"
         .encode_utf16()
         .chain(std::iter::once(0))
         .collect::<Vec<u16>>();
